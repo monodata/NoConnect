@@ -39,7 +39,7 @@ consoleuser=$(stat -f%Su /dev/console)
 
 
 # get the UID for the user
-uid=`/usr/bin/id -u "$consoleuser"`
+uid=$(/usr/bin/id -u "$consoleuser")
 
 ###########################################
 ######	Checking and Removing NoMAD  ######
